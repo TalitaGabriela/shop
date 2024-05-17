@@ -1,5 +1,6 @@
 
 
+
 export const metadata = {
   title: "Meu Shop.com",
   description: "E-commerce",
