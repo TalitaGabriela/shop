@@ -1,0 +1,22 @@
+.main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 55px;
+    background-color: red;
+}
+
+.card{
+    width: 400px;
+    height: 400px;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    background-color: #fff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
