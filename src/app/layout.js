@@ -1,6 +1,3 @@
-
-
-
 export const metadata = {
   title: "Meu Shop.com",
   description: "E-commerce",
@@ -8,7 +5,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="pt-br">
       <body>{children}</body>
     </html>
   );
