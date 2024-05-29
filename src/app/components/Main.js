@@ -11,6 +11,10 @@ export default async function Main() {
 
        <div className={styles.card} key={products.id}>
           <p>{products.title}</p>
+          <p>{products.price}</p>
+          <p>{products.description}</p>
+          <p>{products.category}</p>
+          <p>{products.title}</p>
           <Image src={products.image} 
           width={100} 
           height={100} alt="product image"/>
