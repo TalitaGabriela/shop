@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Meu Shop.com",
+  title: "Estrela Shop.com",
   description: "E-commerce",
 };
 

@@ -15,6 +15,7 @@ export default function Header(){
             <nav>
                 <ul className={styles.lista}>
                     <li>COMPRE NA ESTRELA, AQUI VOCÊ REALIZA SEUS DESEJOS!</li>
+                    <li>
                     <Link href="/">
                     <Image className={styles.imagem} 
                     width={25}
@@ -22,8 +23,9 @@ export default function Header(){
                     src={"https://cdn-icons-png.freepik.com/256/2838/2838895.png?ga=GA1.1.414910882.1717006491&semt=ais_hybrid"}
                     />    
                     </Link>
-                </ul>    
-                
+                    <button>ADD PRODUTO</button>
+                    </li>
+                </ul>        
             </nav>
         </header>
     );
