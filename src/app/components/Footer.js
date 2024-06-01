@@ -46,7 +46,7 @@ export default function Footer(){
             src={"https://png.pngtree.com/png-vector/20240209/ourlarge/pngtree-cute-star-icon-vector-png-image_11733198.png"}
             />
             </Link>
-            <p>Copyright by Talita Gbariela Del Poso Vilalva in 18/04/2006</p> 
+            <p>Copyright by Talita Gabriela Del Poso Vilalva in 18/04/2006</p> 
             </div>  
         </footer>
     );
