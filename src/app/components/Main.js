@@ -9,12 +9,12 @@ export default function Main() {
 
   const [listProduct, setListProduct] = useState([]);
   const [listComplete,setListComplete] = useState([]);
+  const [search,setSearch] = useState("")
 
   useEffect(() => {
     const getProduct = async () => {
       const response = await fetch("https://fakestoreapi.com/products/");
       const data = await response.json();
-      const [search,setSearch] = useState("")
 
       setListProduct(data);
       setListComplete(data);
@@ -52,7 +52,16 @@ export default function Main() {
 
   const searchText = (text) => {
     setSearch(text);
-       
+
+    if (text.trim() == ""){
+      setListProduct(listComplete);
+      return
+    }
+
+    const newList =  listProduct.filter((product) => 
+      product.title.toUpperCase().trim().includes(search.toUpperCase().trim())
+    );
+    setListProduct(newList);   
   }
 
 
@@ -62,7 +71,7 @@ export default function Main() {
   return (
     <>
       <div className={styles.nav}>
-        <input className={styles.input} type = "text" value={textSearch} placeholder="Pesquise o produto" onChange={(event) => searchText(event.target.value)}/>
+        <input className={styles.input} type = "text" value={search} placeholder="Pesquise o produto" onChange={(event) => searchText(event.target.value)}/>
         <button onClick={ordAz} className={styles.button}> A - Z</button>
         <button onClick={ordZa} className={styles.button}> Z - A</button>
         <button onClick={ordBaratCaro} className={styles.button}> Barato - Caro</button>
