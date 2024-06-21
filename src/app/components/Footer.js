@@ -8,32 +8,40 @@ export default function Footer(){
             <div className={styles.redes}>
             <ul className={styles.lista}>
                 <li>
+            <Link href="/">
                 <Image 
             width={25}
             height={25}
             src={"https://cdn-icons-png.freepik.com/256/5968/5968967.png?ga=GA1.1.414910882.1717006491&semt=ais_hybrid"}
             />
+            </Link>
             </li>
                 <li>
+            <Link href="/">
                 <Image 
                  width={25}
                  height={25}
                  src={"https://cdn-icons-png.freepik.com/256/717/717392.png?ga=GA1.1.414910882.1717006491&semt=ais_hybrid"}
             />
+            </Link>
             </li>
                 <li>
+            <Link href="/">
                 <Image
                  width={25}
                  height={25}
                  src={"https://cdn-icons-png.freepik.com/256/12942/12942738.png?ga=GA1.1.414910882.1717006491&semt=ais_hybrid"}
             />
+            </Link>
             </li>
                 <li>
+            <Link href="/">
                 <Image 
                 width={25}
                 height={25}
                 src={"https://cdn-icons-png.freepik.com/256/3116/3116491.png?ga=GA1.1.414910882.1717006491&semt=ais_hybrid"}
             />
+            </Link>
             </li>
             </ul>
             </div>

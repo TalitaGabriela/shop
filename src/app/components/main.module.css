@@ -24,10 +24,30 @@
     margin-bottom: 10px;
 }
 
+.nav{
+    align-items: center;
+    text-align: center;
+}
+
 .button {
     color: black;
     background-color: rgb(129, 215, 255);
     border-color: black;
     font-size: 18;
     border: 1;
+    border-radius: 25px;
+    margin: 25px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.button:hover {
+    background-color: #2980b9;
+    color: #ffffff;
+}
+
+.button:active {
+    background-color: #1f618d;
 }
