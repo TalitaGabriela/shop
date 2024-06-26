@@ -1,6 +1,6 @@
 .cabecalho{
     display: flex;
-    height: 100px;
+    min-height: 120px;
     background-color: white;
     font-family: Arial, Helvetica, sans-serif;
 }

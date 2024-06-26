@@ -25,7 +25,6 @@ export default function Main() {
       setErrorFetch(true);
     }
   }
-
     getProduct();
   }, []);
 
@@ -72,14 +71,12 @@ export default function Main() {
 
   if (errorFetch == true){
     return( 
-    <main className={styles.main}>
     <ErrorGetData/>
-    </main>
   );
   }
 
 
-  if (listProduct[0] == null) {
+  if (listComplete[0] == null) {
     return (
     <main className={styles.main}>
     <Spinner />

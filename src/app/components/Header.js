@@ -13,6 +13,7 @@ export default function Header(){
             />
             </Link>
             <nav>
+                <div>
                 <ul className={styles.lista}>
                     <li className={styles.frase}>COMPRE NA ESTRELA, AQUI VOCÊ REALIZA SEUS DESEJOS!</li>
                     <li>
@@ -25,7 +26,8 @@ export default function Header(){
                     </Link>
                     <button className = {styles.button}>ADD PRODUTO</button>
                     </li>
-                </ul>        
+                </ul>
+                </div>        
             </nav>
         </header>
     );
