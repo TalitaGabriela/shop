@@ -24,6 +24,19 @@
     margin-bottom: 10px;
 }
 
+button .card{
+    color: black;
+    background-color: rgb(129, 215, 255);
+    border-color: black;
+    font-size: 18;
+    border: 1;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
 .nav{
     align-items: center;
     text-align: center;

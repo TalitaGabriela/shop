@@ -5,6 +5,8 @@ import Image from "next/image";
 import styles from "./main.module.css"
 import Spinner from "./Spinner";
 import ErrorGetData from "./ErrorGetData";
+import Link from "next/link";
+import Product from "../product/[id]/page";
 
 export default function Main() {
 
@@ -106,6 +108,9 @@ export default function Main() {
             <p className={styles.descricao}>{products.description}</p>
             <p className={styles.categoria}>{products.category}</p>
             <p className={styles.avaliacao}>{products.rating.count} ESTRELAS</p>
+            <button className={styles.button}>
+              <Link href={`product/${products.id}`}>Ver mais</Link>
+            </button>
           </div>
         )};
       </main>
